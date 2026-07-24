@@ -1,0 +1,129 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  github.com/hellobloom repositories and package metadata, npm @bloomprotocol scope,
+  SEC Form 10-K FY2023 (Bloom HoldCo LLC)
+notes: >-
+  Bloom's conformance surface is standards-implementation, not certification. The
+  company published no SOC 2 / ISO 27001 / PCI / HIPAA / FedRAMP attestation and
+  operated no trust center, so no Compliance pointer is wired into apis.yml. What it
+  did do — and did substantively — was implement the W3C and DIF decentralized-identity
+  stack in open source. Entries below are evidenced by named first-party repositories
+  and published packages. Bloom is wound down (see lifecycle/bloom-lifecycle.yml);
+  these conformance claims are historical.
+standards:
+- id: w3c-verifiable-credentials
+  name: W3C Verifiable Credentials Data Model
+  conforms: true
+  evidence: >-
+    @bloomprotocol/vc provides TypeScript types, JSON schemas, and signing/verifying
+    functions for Verifiable Credentials; @bloomprotocol/vc-data provides VC data types.
+    The FY2023 10-K describes the product as VC technology in which credentials are
+    stored locally on the user's device.
+  url: https://github.com/hellobloom/ssi-sdk
+- id: w3c-did
+  name: W3C Decentralized Identifiers (DIDs)
+  conforms: true
+  evidence: >-
+    @bloomprotocol/elem-did-legacy-non-anchored implements creation and resolution of
+    non-anchored legacy Element DIDs.
+  url: https://www.npmjs.com/package/@bloomprotocol/elem-did-legacy-non-anchored
+- id: dif-presentation-exchange
+  name: DIF Presentation Exchange
+  conforms: true
+  evidence: >-
+    @bloomprotocol/presentation-exchange publishes TypeScript types for Presentation
+    Definition / Presentation Submission; Bloom also maintained a fork of the DIF
+    presentation-exchange specification repository.
+  url: https://github.com/hellobloom/presentation-exchange
+- id: dif-credential-manifest
+  name: DIF Credential Manifest
+  conforms: true
+  evidence: '@bloomprotocol/credential-manifest publishes TypeScript types for Credential Manifest.'
+  url: https://www.npmjs.com/package/@bloomprotocol/credential-manifest
+- id: dif-waci
+  name: DIF WACI (Wallet And Credential Interaction)
+  conforms: true
+  evidence: >-
+    @bloomprotocol/waci-core (types), @bloomprotocol/waci-jose (JOSE implementation)
+    and @bloomprotocol/waci-kit-react (QR/button interaction initiator), plus the
+    hellobloom/waci-demo repository.
+  url: https://github.com/hellobloom/ssi-sdk
+- id: json-ld
+  name: JSON-LD / Linked Data Proofs
+  conforms: true
+  evidence: >-
+    @bloomprotocol/ecdsa-secp256k1-signature-2019 is an EcdsaSecp256k1Signature2019
+    Linked Data Proof suite for use with jsonld-signatures.
+  url: https://www.npmjs.com/package/@bloomprotocol/ecdsa-secp256k1-signature-2019
+- id: json-schema
+  name: JSON Schema
+  conforms: true
+  evidence: '@bloomprotocol/vc ships JSON schemas for its credential types.'
+  url: https://github.com/hellobloom/ssi-sdk
+- id: openpgp
+  name: OpenPGP (RFC 4880)
+  conforms: true
+  evidence: >-
+    The bloom-vault data registry specification requires client-side OpenPGP encryption
+    and authenticates via detached PGP signatures over an access-token challenge; no
+    plaintext is transmitted to the registry.
+  url: https://github.com/hellobloom/bloom-vault/blob/master/spec.md
+- id: erc-20
+  name: ERC-20 (Ethereum token standard)
+  conforms: true
+  evidence: >-
+    BLT was issued as an Ethereum token (hellobloom/crowdsale). Note that BLT is no
+    longer maintained or supported and its Exchange Act registration was terminated
+    on 2025-08-14.
+  url: https://github.com/hellobloom/crowdsale
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  evidence: >-
+    No OAuth 2.0 surface found. bloom-vault authenticates with a PGP-signature
+    challenge yielding a bearer access token, not an OAuth flow. No scopes artifact
+    is produced for this reason.
+- id: oidc
+  name: OpenID Connect
+  conforms: false
+  evidence: No /.well-known/openid-configuration is served and no OIDC implementation was found.
+- id: rfc9457
+  name: RFC 9457 Problem Details for HTTP APIs
+  conforms: false
+  evidence: >-
+    The bloom-vault specification returns bare HTTP status codes (401, 404) and plain
+    JSON bodies; no application/problem+json usage was found.
+- id: fapi
+  name: FAPI (Financial-grade API)
+  conforms: false
+  evidence: No FAPI claim or conformance certification found.
+- id: fhir
+  name: HL7 FHIR
+  conforms: false
+  evidence: Not applicable to Bloom's domain.
+- id: scim
+  name: SCIM
+  conforms: false
+  evidence: No SCIM surface found.
+certifications: []
+certifications_note: >-
+  No published security or privacy certifications (SOC 2, ISO 27001, PCI DSS, HIPAA,
+  FedRAMP) were found for Bloom, and no trust center exists. See
+  security/bloom-vulnerability-disclosure.yml probe result (none) and
+  security/bloom-trust-center.yml probe result (none).
+regulatory:
+- id: sec-exchange-act-registration
+  name: US SEC Exchange Act registration (BLT token)
+  status: terminated
+  evidence: >-
+    Registered under Section 12(g) pursuant to a June 2023 SEC settlement; terminated
+    by Form 15-12G filed 2025-08-14 under Rule 12g-4(a)(1) with holders of record
+    stated as "none".
+  url: https://www.sec.gov/Archives/edgar/data/1975931/000121390025076665/ea0253374-1512g_bloom.htm
+- id: gdpr
+  name: EU GDPR
+  status: referenced
+  evidence: >-
+    The FY2023 10-K lists "Data collection in Europe" among its risk factors, but no
+    published DPA, privacy framework certification or data-protection program was found.

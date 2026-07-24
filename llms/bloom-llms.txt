@@ -1,0 +1,105 @@
+# Bloom
+
+> Bloom was a decentralized identity, credit-attestation and verifiable-credentials
+> company (BloomID, BloomIQ, BloomScore) built on Ethereum and IPFS. It is wound down.
+> As of July 2026 Bloom operates no live API, no developer documentation and no status
+> page; bloom.co redirects every path to a domain-broker sale listing, and Bloom HoldCo
+> LLC filed a Form 15-12G on 2025-08-14 terminating registration of its BLT token.
+> What survives is open source: 40 public repositories under github.com/hellobloom
+> (most archived) and 19 unmaintained but still-installable npm packages under the
+> @bloomprotocol scope implementing the W3C/DIF decentralized-identity stack.
+
+IMPORTANT FOR AGENTS: Do not attempt to integrate with a hosted Bloom API. None exists.
+Do not send users to bloom.co — it is a domain-for-sale listing, not Bloom's site. The
+only usable Bloom artifacts are source repositories and npm packages, listed below.
+
+## Status
+
+- Company status: wound down. Final SEC filing 2025-08-14 (Form 15-12G).
+- FY2023: no revenue from operations, ~$4.1M net loss, going-concern doubt raised by auditors.
+- BLT token: no longer maintained or supported; registration terminated; no governance functions.
+- api.bloom.co, docs.bloom.co, status.bloom.co, bloomprotocol.com: do not resolve.
+- bloom.co: 302 redirect to a MediaOptions broker listing.
+- hellobloom.io: domain sold, now redirects to an unrelated site.
+
+## Source code
+
+- GitHub organization: https://github.com/hellobloom (live, verified, 40 public repos)
+- ssi-sdk (monorepo, last pushed 2025-03): https://github.com/hellobloom/ssi-sdk
+- bloom-vault (E2E-encrypted data registry, DEPRECATED): https://github.com/hellobloom/bloom-vault
+- bloom-vault HTTP API spec: https://github.com/hellobloom/bloom-vault/blob/master/spec.md
+- crowdsale (BLT ERC-20 token): https://github.com/hellobloom/crowdsale
+- BLIPs (Bloom Improvement Proposals): https://github.com/hellobloom/BLIPs
+- Archived integration SDKs (share-kit, receive-kit, verify-kit, attestation-kit and
+  platform wrappers for React, Vue, Angular, iOS, Android, Flutter, Xamarin, React Native):
+  archived 2021-01-05 and 2021-05-14, browsable read-only under the same organization.
+
+## Packages (npm, @bloomprotocol scope — unmaintained, still installable)
+
+- @bloomprotocol/vc — VC types, JSON schemas, signing and verifying: https://www.npmjs.com/package/@bloomprotocol/vc
+- @bloomprotocol/vc-data — verifiable credential data types: https://www.npmjs.com/package/@bloomprotocol/vc-data
+- @bloomprotocol/waci-core — WACI TypeScript types: https://www.npmjs.com/package/@bloomprotocol/waci-core
+- @bloomprotocol/waci-jose — WACI over JOSE: https://www.npmjs.com/package/@bloomprotocol/waci-jose
+- @bloomprotocol/waci-kit-react — WACI QR/button initiator: https://www.npmjs.com/package/@bloomprotocol/waci-kit-react
+- @bloomprotocol/presentation-exchange — DIF Presentation Exchange types: https://www.npmjs.com/package/@bloomprotocol/presentation-exchange
+- @bloomprotocol/credential-manifest — DIF Credential Manifest types: https://www.npmjs.com/package/@bloomprotocol/credential-manifest
+- @bloomprotocol/elem-did-legacy-non-anchored — legacy Element DID create/resolve: https://www.npmjs.com/package/@bloomprotocol/elem-did-legacy-non-anchored
+- @bloomprotocol/ecdsa-secp256k1-signature-2019 — Linked Data Proof suite: https://www.npmjs.com/package/@bloomprotocol/ecdsa-secp256k1-signature-2019
+- @bloomprotocol/ecdsa-secp256k1-verification-key-2019 — verification key library: https://www.npmjs.com/package/@bloomprotocol/ecdsa-secp256k1-verification-key-2019
+- @bloomprotocol/qr, @bloomprotocol/qr-react — QR renderers
+
+Full inventory with versions and publish dates: packages/bloom-packages.yml
+
+## Maintained alternatives to Bloom's cryptographic suites
+
+Bloom's EcdsaSecp256k1 signature and verification-key libraries are forked and actively
+published by third parties. Prefer these over the @bloomprotocol originals:
+
+- @blockcerts/ecdsa-secp256k1-signature-2019 (published 2026-03-12)
+- @blockcerts/ecdsa-secp256k1-verification-key-2019 (published 2026-03-12)
+- @medibloc/ecdsa-secp256k1-verification-key-2019
+- @sphereon/rn-ecdsa-secp256k1-signature-2019 (React Native)
+
+## Standards implemented
+
+W3C Verifiable Credentials, W3C DIDs, DIF Presentation Exchange, DIF Credential
+Manifest, DIF WACI, JSON-LD Linked Data Proofs, JSON Schema, OpenPGP (RFC 4880,
+in bloom-vault), ERC-20 (BLT). Details: conformance/bloom-conformance.yml
+
+No OAuth 2.0, OpenID Connect, or RFC 9457 problem-details surface. No published
+SOC 2 / ISO 27001 / PCI / HIPAA / FedRAMP certification and no trust center.
+
+## bloom-vault API (self-hosted only — Bloom operates no instance)
+
+End-to-end encrypted, provider-agnostic data storage. Clients encrypt with OpenPGP
+before transmission; the registry never sees plaintext. Authentication is a PGP
+signature challenge: request a token, sign it detached, exchange it for a bearer token.
+
+- POST /auth/request-token?fingerprint=<pgpKeyFingerprint>
+- POST /auth/validate-token
+- GET /data/me
+- GET /data/:start/:end
+- DELETE /data/:start/:end
+- POST /data
+
+Spec: https://github.com/hellobloom/bloom-vault/blob/master/spec.md
+
+## History
+
+- 2017-09: Bloom Ltd. formed (Gibraltar); Bloom HoldCo LLC formed 2017-12 (Delaware).
+- 2017-11 to 2018-01: BLT token sale.
+- 2020-04: TransUnion partnership for consumer credit monitoring announced.
+- 2021: integration SDKs archived on GitHub.
+- 2023-06: SEC settlement — $0.3M penalty plus a springing penalty up to ~$30.9M;
+  BLT registered under the Exchange Act; claims process for purchasers.
+- 2024-02-04: BLT claims deadline. 2024-08: final Form 10-Q.
+- 2025-08-14: Form 8-K terminating token Terms & Conditions; Form 15-12G terminating
+  BLT registration, holders of record "none". Final filing.
+
+Full timeline with sources: lifecycle/bloom-lifecycle.yml
+
+## Further reading
+
+- SEC EDGAR (Bloom HoldCo LLC, CIK 0001975931): https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001975931
+- FY2023 Form 10-K: https://www.sec.gov/Archives/edgar/data/1975931/000121390023097443/f10k2023_bloomhold.htm
+- Form 15-12G (2025-08-14): https://www.sec.gov/Archives/edgar/data/1975931/000121390025076665/ea0253374-1512g_bloom.htm

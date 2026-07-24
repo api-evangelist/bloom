@@ -1,0 +1,202 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/search?q=%40bloomprotocol
+notes: >-
+  All packages below are published under the first-party @bloomprotocol npm scope and
+  correspond to repositories in Bloom's GitHub organization (https://github.com/hellobloom).
+  Bloom has wound down (see lifecycle/bloom-lifecycle.yml); most of these libraries are
+  unmaintained and their source repositories are archived. They remain installable from
+  npm. No first-party packages were found on PyPI, Maven Central, NuGet, pkg.go.dev,
+  RubyGems, Packagist or crates.io — Bloom shipped a TypeScript/JavaScript-only stack.
+registries_probed:
+- registry: npm
+  result: 19 first-party @bloomprotocol packages found
+- registry: pypi
+  result: none
+- registry: maven-central
+  result: none
+- registry: nuget
+  result: none
+- registry: pkg.go.dev
+  result: none
+- registry: rubygems
+  result: none
+- registry: packagist
+  result: none
+- registry: crates.io
+  result: none
+packages:
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/vc-data'
+  version: 0.1.61
+  published: '2024-11-12'
+  url: https://www.npmjs.com/package/@bloomprotocol/vc-data
+  install: npm install @bloomprotocol/vc-data
+  description: Data types for verifiable credentials (forked from @affinidi/vc-data)
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/vc'
+  version: 0.1.5
+  published: '2023-08-31'
+  url: https://www.npmjs.com/package/@bloomprotocol/vc
+  install: npm install @bloomprotocol/vc
+  description: >-
+    TypeScript types, JSON schemas, and signing and verifying functions for
+    Verifiable Credentials
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/waci-jose'
+  version: 0.1.3
+  published: '2022-09-26'
+  url: https://www.npmjs.com/package/@bloomprotocol/waci-jose
+  install: npm install @bloomprotocol/waci-jose
+  description: WACI (Wallet And Credential Interaction) implementation with JOSE
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/waci-core'
+  version: 0.1.2
+  published: '2021-06-01'
+  url: https://www.npmjs.com/package/@bloomprotocol/waci-core
+  install: npm install @bloomprotocol/waci-core
+  description: WACI TypeScript types
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/waci-kit-react'
+  version: 0.1.2
+  published: '2021-11-12'
+  url: https://www.npmjs.com/package/@bloomprotocol/waci-kit-react
+  install: npm install @bloomprotocol/waci-kit-react
+  description: Render a QR code or button to initiate a WACI interaction
+  repository: https://github.com/hellobloom/waci-kit-react
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/presentation-exchange'
+  version: 0.1.2
+  published: '2021-06-01'
+  url: https://www.npmjs.com/package/@bloomprotocol/presentation-exchange
+  install: npm install @bloomprotocol/presentation-exchange
+  description: TypeScript types for DIF Presentation Exchange
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/credential-manifest'
+  version: 0.1.4
+  published: '2021-06-01'
+  url: https://www.npmjs.com/package/@bloomprotocol/credential-manifest
+  install: npm install @bloomprotocol/credential-manifest
+  description: TypeScript types for DIF Credential Manifest
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/elem-did-legacy-non-anchored'
+  version: 0.1.1
+  published: '2021-06-01'
+  url: https://www.npmjs.com/package/@bloomprotocol/elem-did-legacy-non-anchored
+  install: npm install @bloomprotocol/elem-did-legacy-non-anchored
+  description: Library for creating and resolving non-anchored legacy Element DIDs
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/ecdsa-secp256k1-signature-2019'
+  version: 0.1.3
+  published: '2022-07-28'
+  url: https://www.npmjs.com/package/@bloomprotocol/ecdsa-secp256k1-signature-2019
+  install: npm install @bloomprotocol/ecdsa-secp256k1-signature-2019
+  description: >-
+    EcdsaSecp256k1Signature2019 Linked Data Proof suite for use with jsonld-signatures
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/ecdsa-secp256k1-verification-key-2019'
+  version: 0.1.3
+  published: '2022-07-28'
+  url: https://www.npmjs.com/package/@bloomprotocol/ecdsa-secp256k1-verification-key-2019
+  install: npm install @bloomprotocol/ecdsa-secp256k1-verification-key-2019
+  description: >-
+    TypeScript library for generating and working with EcdsaSecp256k1VerificationKey2019
+  repository: https://github.com/hellobloom/ssi-sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/qr-react'
+  version: 3.2.0
+  published: '2021-04-19'
+  url: https://www.npmjs.com/package/@bloomprotocol/qr-react
+  install: npm install @bloomprotocol/qr-react
+  description: SVG QR renderer for React
+  repository: https://github.com/hellobloom/qr-react
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/qr'
+  version: 2.0.1
+  published: '2020-01-28'
+  url: https://www.npmjs.com/package/@bloomprotocol/qr
+  install: npm install @bloomprotocol/qr
+  description: Canvas QR renderer
+  repository: https://github.com/hellobloom/qr
+  official: true
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/prettier-config'
+  version: 1.0.1
+  published: '2023-11-18'
+  url: https://www.npmjs.com/package/@bloomprotocol/prettier-config
+  install: npm install @bloomprotocol/prettier-config
+  description: Bloom's base Prettier configuration
+  repository: https://github.com/hellobloom/tooling
+  official: true
+  kind: tooling
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/eslint-config'
+  version: 2.0.0-beta.1
+  published: '2021-06-14'
+  url: https://www.npmjs.com/package/@bloomprotocol/eslint-config
+  install: npm install @bloomprotocol/eslint-config
+  description: Bloom's ESLint configurations
+  repository: https://github.com/hellobloom/tooling
+  official: true
+  kind: tooling
+- language: javascript
+  registry: npm
+  name: '@bloomprotocol/eslint-config-react'
+  version: 1.0.0
+  published: '2020-03-17'
+  url: https://www.npmjs.com/package/@bloomprotocol/eslint-config-react
+  install: npm install @bloomprotocol/eslint-config-react
+  description: Bloom's base React ESLint configuration
+  repository: https://github.com/hellobloom/tooling
+  official: true
+  kind: tooling
+downstream_forks:
+- name: '@blockcerts/ecdsa-secp256k1-signature-2019'
+  url: https://www.npmjs.com/package/@blockcerts/ecdsa-secp256k1-signature-2019
+  published: '2026-03-12'
+  note: Blockcerts maintains an actively-published fork of Bloom's signature suite.
+- name: '@blockcerts/ecdsa-secp256k1-verification-key-2019'
+  url: https://www.npmjs.com/package/@blockcerts/ecdsa-secp256k1-verification-key-2019
+  published: '2026-03-12'
+  note: Blockcerts maintains an actively-published fork of Bloom's verification key library.
+- name: '@medibloc/ecdsa-secp256k1-verification-key-2019'
+  url: https://www.npmjs.com/package/@medibloc/ecdsa-secp256k1-verification-key-2019
+  published: '2023-03-07'
+  note: MediBloc fork.
+- name: '@sphereon/rn-ecdsa-secp256k1-signature-2019'
+  url: https://www.npmjs.com/package/@sphereon/rn-ecdsa-secp256k1-signature-2019
+  published: '2021-10-05'
+  note: Sphereon React Native fork.

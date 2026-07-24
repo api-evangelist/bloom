@@ -1,0 +1,47 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of bloom.co
+result: none
+notes: >-
+  No .well-known documents are served. Every path under https://bloom.co/ now returns a
+  302 redirect to https://mediaoptions.com/brokered-domains/bloom-co/ — the domain is
+  listed for sale with a broker (see lifecycle/bloom-lifecycle.yml). The historical
+  developer hosts (docs.bloom.co, api.bloom.co, status.bloom.co, bloomprotocol.com) no
+  longer resolve. The Internet Archive shows bloom.co/.well-known/ai-plugin.json was
+  crawled, but the captured response body is the application's JSON 404
+  ({"success":false,"error":"Route not found"}) — Bloom never actually served an AI
+  plugin manifest. No pointer is wired into apis.yml for this artifact because nothing
+  was found; this file records the negative result so future runs need not re-probe.
+host: https://bloom.co
+documents:
+- path: /.well-known/security.txt
+  status: 302
+  location: https://mediaoptions.com/brokered-domains/bloom-co/
+- path: /.well-known/openid-configuration
+  status: 302
+  location: https://mediaoptions.com/brokered-domains/bloom-co/
+- path: /.well-known/oauth-authorization-server
+  status: 302
+  location: https://mediaoptions.com/brokered-domains/bloom-co/
+- path: /.well-known/api-catalog
+  status: 302
+  location: https://mediaoptions.com/brokered-domains/bloom-co/
+- path: /.well-known/ai-plugin.json
+  status: 302
+  location: https://mediaoptions.com/brokered-domains/bloom-co/
+- path: /llms.txt
+  status: 302
+  location: https://mediaoptions.com/brokered-domains/bloom-co/
+other_hosts_probed:
+- host: docs.bloom.co
+  status: dns-no-resolve
+- host: api.bloom.co
+  status: dns-no-resolve
+- host: status.bloom.co
+  status: dns-no-resolve
+  note: A Statuspage-hosted status page existed historically (status.bloom.co/api/v2/status.json).
+- host: bloomprotocol.com
+  status: dns-no-resolve
+- host: hellobloom.io
+  status: 200
+  note: Domain sold; now redirects to an unrelated site (winna.com).

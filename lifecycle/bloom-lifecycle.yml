@@ -1,0 +1,163 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  SEC EDGAR (CIK 0001975931, Bloom HoldCo LLC), github.com/hellobloom repository
+  archive dates, npm publish dates, live DNS/HTTP probes of bloom.co
+status: discontinued
+summary: >-
+  Bloom's developer surface is fully wound down. The public SDK repositories were
+  archived in 2021, the hosted API and documentation hosts no longer resolve, the
+  bloom.co domain is listed for sale with a broker, and Bloom HoldCo LLC filed a
+  Form 15-12G on 2025-08-14 terminating registration of the BLT token (holders of
+  record: none) alongside an 8-K terminating the token Terms & Conditions. The npm
+  packages under @bloomprotocol remain installable but are unmaintained.
+current_version: null
+versioning_policy: none published
+deprecation_policy: none published
+sla: none published
+status_page:
+  url: https://status.bloom.co/
+  status: offline
+  note: >-
+    A Statuspage-hosted page existed historically (status.bloom.co/api/v2/status.json
+    appears in Internet Archive crawls) but the host no longer resolves. No
+    StatusPage pointer is wired into apis.yml because there is no live status page.
+timeline:
+- date: '2017-09-06'
+  event: Bloom Ltd. formed under the laws of Gibraltar.
+  source: SEC Form 10-12G (Bloom HoldCo LLC)
+- date: '2017-11-14'
+  event: >-
+    BLT token sale begins; sales to purchasers run through 2018-01-02. Bloom launches
+    as a decentralized identity attestation and credit scoring protocol on Ethereum
+    and IPFS (BloomID, BloomIQ, BloomScore).
+  source: SEC Form 10-K FY2023
+- date: '2017-12-27'
+  event: Bloom HoldCo LLC organized in Delaware as holding company for Bloom Ltd.
+  source: SEC Form 10-12G
+- date: '2020-04-14'
+  event: Bloom announces a partnership with TransUnion for consumer credit monitoring.
+  source: https://www.forbes.com/sites/oluwaseunadeyanju/2020/04/14/bloom-partners-with-transunion-to-bring-consumer-credit-data-to-blockchain/
+- date: '2021-01-05'
+  event: attestation-kit repository archived on GitHub.
+  source: https://github.com/hellobloom/attestation-kit
+- date: '2021-05-14'
+  event: >-
+    Bulk archival of the public developer surface on GitHub — share-kit and all its
+    platform wrappers (react, vue, angular, ios, android, flutter, xamarin,
+    reactnative), receive-kit, verify-kit, waci-kit-react, vc, vc-data,
+    attestations-lib, tx-service-pub, bloom-starter and bloom-credential-playground
+    were all archived the same day. This is the effective end-of-life of Bloom's
+    published integration SDKs.
+  source: https://github.com/hellobloom
+- date: '2022-06'
+  event: Founding CEO departs (served from inception in 2017 until June 2022).
+  source: SEC Form 10-K FY2023
+- date: '2023-03-04'
+  event: bloom-vault (the end-to-end encrypted data storage service) last updated; marked DEPRECATED.
+  source: https://github.com/hellobloom/bloom-vault
+- date: '2023-05-11'
+  event: Ryan D. Faber appointed interim CEO and Manager of Bloom.
+  source: SEC Form 10-K FY2023
+- date: '2023-06'
+  event: >-
+    SEC settlement — Bloom agreed to pay a $0.3M penalty plus a springing penalty of
+    up to approximately $30.9M if it fails to complete the BLT claims and registration
+    processes, and to register BLT under the Exchange Act.
+  source: SEC Form 10-K FY2023
+- date: '2023-12-21'
+  event: >-
+    FY2023 Form 10-K filed. No revenue from operations for the year ended
+    2023-09-30; net loss of approximately $4.1M; auditors include a going-concern
+    explanatory paragraph citing substantial doubt about the company's ability to
+    continue as a going concern. Filing states BLT "no longer has any other uses or
+    functionalities on our Platform" and that Bloom is "no longer maintaining or
+    supporting the BLT."
+  source: https://www.sec.gov/Archives/edgar/data/1975931/000121390023097443/f10k2023_bloomhold.htm
+- date: '2024-02-04'
+  event: BLT claims process Claim Form Deadline.
+  source: SEC Form 10-K FY2023
+- date: '2024-08-14'
+  event: >-
+    Final Form 10-Q filed (quarter ended 2024-06-30). No revenue from operations for
+    the nine months ended 2024-06-30.
+  source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001975931
+- date: '2024-11-12'
+  event: '@bloomprotocol/vc-data 0.1.61 published — the last first-party npm release.'
+  source: https://www.npmjs.com/package/@bloomprotocol/vc-data
+- date: '2025-01-23'
+  event: Form NT 10-K filed (notification of late annual report filing).
+  source: SEC EDGAR
+- date: '2025-03-07'
+  event: Form NT 10-Q filed (notification of late quarterly report filing).
+  source: SEC EDGAR
+- date: '2025-03-04'
+  event: ssi-sdk repository last pushed — the last first-party source activity of substance.
+  source: https://github.com/hellobloom/ssi-sdk
+- date: '2025-05-15'
+  event: Second Form NT 10-Q filed. No periodic report follows.
+  source: SEC EDGAR
+- date: '2025-08-14'
+  event: >-
+    Form 8-K — Bloom published amended Terms & Conditions Relating to Token Sale
+    permitting the company to terminate them in their entirety at its sole discretion
+    by notice on its website.
+  source: https://www.sec.gov/Archives/edgar/data/1975931/000121390025076644/ea0253359-8k_bloom.htm
+- date: '2025-08-14'
+  event: >-
+    Form 15-12G filed — certification and notice of termination of registration of the
+    BLT Token under Section 12(g), relying on Rule 12g-4(a)(1), with approximate number
+    of holders of record stated as "none". This is Bloom's final SEC filing.
+  source: https://www.sec.gov/Archives/edgar/data/1975931/000121390025076665/ea0253374-1512g_bloom.htm
+- date: '2026-07-20'
+  event: >-
+    Probed by the API Evangelist enrichment pipeline. bloom.co resolves but 302-redirects
+    every path to a MediaOptions broker listing offering the domain for sale;
+    docs.bloom.co, api.bloom.co, status.bloom.co and bloomprotocol.com do not resolve;
+    hellobloom.io has been sold and redirects to an unrelated site. DNS for bloom.co
+    still carries Bloom's own SPF/DMARC records (support@bloom.co, Help Scout,
+    Customer.io, Mailgun, SendGrid), indicating the domain remains under Bloom's
+    control while listed for sale.
+  source: live probe
+discontinued_surfaces:
+- surface: BloomID / BloomIQ / BloomScore protocol APIs
+  status: offline
+  note: api.bloom.co no longer resolves.
+- surface: Developer documentation
+  status: offline
+  note: docs.bloom.co no longer resolves; no Internet Archive snapshots available.
+- surface: Status page
+  status: offline
+  note: status.bloom.co no longer resolves.
+- surface: BLT token (ERC-20)
+  status: unsupported
+  note: >-
+    Registration terminated 2025-08-14; company states it no longer maintains or
+    supports BLT, and no voting or governance functions remain.
+- surface: share-kit / receive-kit / verify-kit / attestation-kit integration SDKs
+  status: archived
+  note: GitHub repositories archived 2021-01-05 and 2021-05-14.
+surviving_surfaces:
+- surface: '@bloomprotocol npm packages'
+  status: unmaintained-but-available
+  url: https://www.npmjs.com/search?q=%40bloomprotocol
+  note: 19 packages remain installable. See packages/bloom-packages.yml.
+- surface: github.com/hellobloom
+  status: live
+  url: https://github.com/hellobloom
+  note: >-
+    Organization is live and verified with 40 public repositories, most archived.
+    ssi-sdk (2025-03) and qr (2026-02) show the most recent activity.
+- surface: bloom-vault self-hosted data registry
+  status: deprecated-open-source
+  url: https://github.com/hellobloom/bloom-vault
+  note: >-
+    Open-source reference implementation of an end-to-end encrypted data registry with
+    a documented HTTP API (POST /auth/request-token, POST /auth/validate-token,
+    GET /data/me, GET|DELETE /data/:start/:end, POST /data), specified in spec.md.
+    Self-hostable; Bloom operates no instance. Marked DEPRECATED by the maintainers.
+- surface: Downstream forks of Bloom's cryptographic suites
+  status: actively-maintained-by-third-parties
+  note: >-
+    Blockcerts, MediBloc and Sphereon publish maintained forks of Bloom's
+    EcdsaSecp256k1 signature and verification-key libraries. See packages/bloom-packages.yml.

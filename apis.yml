@@ -1,21 +1,57 @@
 aid: bloom
 name: Bloom
-description: 'Bloom is a company surfaced as a portfolio company of pantera-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Bloom was a decentralized identity, credit-attestation and verifiable-credentials
+  company backed by Pantera Capital, built on Ethereum and IPFS around three products:
+  BloomID (identity attestation), BloomIQ (a credit registry) and BloomScore (credit
+  risk scoring). Its stated aim was to let traditional and digital-currency lenders
+  serve people who cannot obtain a bank account or a credit score, and it announced a
+  TransUnion partnership in 2020 for consumer credit monitoring. Bloom is wound down.
+  Its integration SDKs were archived on GitHub in 2021, its API, documentation and
+  status hosts no longer resolve, bloom.co now redirects to a domain-broker sale
+  listing, and Bloom HoldCo LLC filed a Form 15-12G on 2025-08-14 terminating Exchange
+  Act registration of its BLT token with holders of record stated as "none". What
+  survives is open source: 40 public repositories under github.com/hellobloom and 19
+  unmaintained but installable npm packages under the @bloomprotocol scope implementing
+  the W3C and DIF decentralized-identity stack (Verifiable Credentials, DIDs,
+  Presentation Exchange, Credential Manifest, WACI).
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/31297987?v=4
 url: https://raw.githubusercontent.com/api-evangelist/bloom/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - pantera-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-defunct
+x-status: discontinued
+x-status-note: >-
+  No live API surface. Final SEC filing 2025-08-14 (Form 15-12G). See
+  lifecycle/bloom-lifecycle.yml for the full sourced timeline.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Crypto
+- Identity
+- Verifiable Credentials
+- Decentralized Identity
+- Credit Scoring
+- Blockchain
+- Ethereum
+- Self-Sovereign Identity
+- Discontinued
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +61,22 @@ maintainers:
 common:
 - type: Website
   url: https://bloom.co/
+- type: GitHubOrganization
+  url: https://github.com/hellobloom
+- type: Packages
+  url: packages/bloom-packages.yml
+- type: SDKs
+  url: packages/bloom-packages.yml
+- type: Lifecycle
+  url: lifecycle/bloom-lifecycle.yml
+- type: Conformance
+  url: conformance/bloom-conformance.yml
+- type: LLMsTxt
+  url: llms/bloom-llms.txt
+- type: DomainSecurity
+  url: security/bloom-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
