@@ -38,7 +38,7 @@ x-status: discontinued
 x-status-note: >-
   No live API surface. Final SEC filing 2025-08-14 (Form 15-12G). See
   lifecycle/bloom-lifecycle.yml for the full sourced timeline.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
