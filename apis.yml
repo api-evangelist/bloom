@@ -45,7 +45,7 @@ x-backed-by:
 - pantera-capital
 x-tier: profiled
 x-tier-reason: enriched-defunct
-x-status: discontinued
+x-status: defunct
 x-status-note: >-
   No live API surface. Final SEC filing 2025-08-14 (Form 15-12G). See
   lifecycle/bloom-lifecycle.yml for the full sourced timeline.
@@ -63,6 +63,7 @@ tags:
 - Ethereum
 - Self-Sovereign Identity
 - Discontinued
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
