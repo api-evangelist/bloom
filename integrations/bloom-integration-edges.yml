@@ -1,0 +1,148 @@
+edges:
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@bloomprotocol/credential-manifest
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@bloomprotocol/credential-manifest'
+      version: 0.1.4
+      released: '2022-06-03'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/credential-manifest
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/ecdsa-secp256k1-signature-2019'
+      version: 0.1.3
+      released: '2022-07-28'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/ecdsa-secp256k1-signature-2019
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/ecdsa-secp256k1-verification-key-2019'
+      version: 0.1.3
+      released: '2022-07-28'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/ecdsa-secp256k1-verification-key-2019
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/elem-did-legacy-non-anchored'
+      version: 0.1.1
+      released: '2022-06-03'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/elem-did-legacy-non-anchored
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/presentation-exchange'
+      version: 0.1.2
+      released: '2022-06-03'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/presentation-exchange
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/qr'
+      version: 2.0.1
+      released: '2022-06-03'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/qr
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/qr-react'
+      version: 3.2.0
+      released: '2022-06-03'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/qr-react
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/vc'
+      version: 0.1.5
+      released: '2023-08-31'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/vc
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/vc-data'
+      version: 0.1.61
+      released: '2024-11-12'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@bloomprotocol/vc-data
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/waci-core'
+      version: 0.1.2
+      released: '2022-06-03'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/waci-core
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/waci-jose'
+      version: 0.1.3
+      released: '2022-09-26'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/waci-jose
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    - name: '@bloomprotocol/waci-kit-react'
+      version: 0.1.2
+      released: '2022-06-03'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/@bloomprotocol/waci-kit-react
+      repo_leg: github-org:hellobloom
+      publisher_leg: email:bloom.co
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
