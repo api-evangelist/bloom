@@ -64,38 +64,45 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-**Status: discontinued.** Bloom operates no live API.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Bloom was a decentralized identity, credit-attestation and verifiable-credentials company
-backed by Pantera Capital, built on Ethereum and IPFS around BloomID (identity attestation),
-BloomIQ (a credit registry) and BloomScore (credit risk scoring). It announced a TransUnion
-partnership in 2020 for consumer credit monitoring.
+Bloom was a decentralized identity, credit-attestation and verifiable-credentials company backed by Pantera Capital, built on Ethereum and IPFS around three products: BloomID (identity attestation), BloomIQ (a credit registry) and BloomScore (credit risk scoring). Its stated aim was to let traditional and digital-currency lenders serve people who cannot obtain a bank account or a credit score, and it announced a TransUnion partnership in 2020 for consumer credit monitoring. Bloom is wound down. Its integration SDKs were archived on GitHub in 2021, its API, documentation and status hosts no longer resolve, bloom.co now redirects to a domain-broker sale listing, and Bloom HoldCo LLC filed a Form 15-12G on 2025-08-14 terminating Exchange Act registration of its BLT token with holders of record stated as "none". What survives is open source: 40 public repositories under github.com/hellobloom and 19 unmaintained but installable npm packages under the @bloomprotocol scope implementing the W3C and DIF decentralized-identity stack (Verifiable Credentials, DIDs, Presentation Exchange, Credential Manifest, WACI).
 
-The company is wound down. Its integration SDKs were archived on GitHub in 2021; `api.bloom.co`,
-`docs.bloom.co` and `status.bloom.co` no longer resolve; `bloom.co` redirects every path to a
-domain-broker sale listing; and Bloom HoldCo LLC filed a Form 15-12G on 2025-08-14 terminating
-Exchange Act registration of its BLT token with holders of record stated as "none".
+**Areas:** Company · Cryptocurrency · Identity · Verifiable Credentials · Decentralized Identity · Credit Scoring · Blockchain · Ethereum · Self-Sovereign Identity · Discontinued · Defunct
 
-## What survives
+## Bloom on APIs.io (historical record)
 
-- **[github.com/hellobloom](https://github.com/hellobloom)** — 40 public repositories, most archived.
-- **19 npm packages** under the `@bloomprotocol` scope — unmaintained but still installable,
-  implementing W3C Verifiable Credentials and DIDs plus DIF Presentation Exchange, Credential
-  Manifest and WACI. See [`packages/bloom-packages.yml`](packages/bloom-packages.yml).
-- **[bloom-vault](https://github.com/hellobloom/bloom-vault)** — a deprecated but self-hostable
-  end-to-end encrypted data registry with a documented HTTP API.
-- **Third-party forks** — Blockcerts, MediBloc and Sphereon actively publish forks of Bloom's
-  EcdsaSecp256k1 signature and verification-key suites.
+Everything profiled for Bloom is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bloom/](https://apis.io/providers/bloom/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### Published properties
 
-| Artifact | File |
-|---|---|
-| Lifecycle (sourced wind-down timeline) | [`lifecycle/bloom-lifecycle.yml`](lifecycle/bloom-lifecycle.yml) |
-| Packages / SDKs | [`packages/bloom-packages.yml`](packages/bloom-packages.yml) |
-| Conformance (standards implemented) | [`conformance/bloom-conformance.yml`](conformance/bloom-conformance.yml) |
-| llms.txt | [`llms/bloom-llms.txt`](llms/bloom-llms.txt) |
-| Domain security probe | [`security/bloom-domain-security.yml`](security/bloom-domain-security.yml) |
-| Well-known probe (negative result) | [`well-known/bloom-well-known.yml`](well-known/bloom-well-known.yml) |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Backed by: pantera-capital
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bloom Domain Security](https://apis.io/security/bloom/bloom-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://bloom.co/)
+- [GitHub](https://github.com/hellobloom)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bloom: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bloom/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
